@@ -23,7 +23,8 @@ The new columns from this data set are:
 - SubjectId 
   - The original SubjectId from the study. The value originates from the subjects_train.txt and subjects_test.txt values in the original data
 - ActivityName
-  - The text name of the activity performed by the subject. This is the text name for the activity_id from the y_train.txt and y_test.txt in the original data
+  - The text name of the activity performed by the subject. This is the text name for the activity_id from the y_train.txt and y_test.txt in the original data. 
+  The labels are sourced from the activity_labels.txt file
 
 The remaining columns are the calculated mean of the values from the original data set that pertain to mean or standard deviation. 
 Those columns were identified by containing the text "mean" or the text "std" in the original data set. Each column name from the original data set
