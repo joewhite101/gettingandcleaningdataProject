@@ -38,3 +38,4 @@ colnames(labeledAndFormatted)[2] <-'ActivityName'
 
 melted <- melt(labeledAndFormatted, id=c('SubjectId','ActivityName'),measure.vars=colnames(formatted)[3:81])
 tidyData <- dcast(melted, SubjectId + ActivityName ~ variable,mean)
+write.table(tidyData,file = "TidyData.txt",row.names = FALSE)
