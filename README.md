@@ -41,7 +41,7 @@ the R grepl function is used to isolate the columns we care about.
 5. The next step is adding the activity and subject information to our X data. This is again done by using cbind() with the data from the merged Y and merged subject data created in the first file reading steps
 6. Once the columns are added the colnames() function is used to re-label the columns with appropriate names. See the CodeBook for a description of the names used
 7. The next step is to transform the activity ids added in the prior step into meaningful activity names.
-* The activity ids are transformed into named values by using the merge function on the combined data set and the activity_labels.txt file we read in the first step
+  * The activity ids are transformed into named values by using the merge function on the combined data set and the activity_labels.txt file we read in the first step
 8. Then we rename the columns in the merged file
 9. Next the R melt() function is used to create a tall data-set that is broken down with a combined id of SubjectId and ActivityName and all of the remaining columns are treated as variables
 10. Finally, the R dcast() function is used to calculate the mean of all of the variables by SubjectId and ActivityName. The output of the dcast function is the tidy data set giving the mean of all of the columns pertaining to mean and standard deviation from the original data.
